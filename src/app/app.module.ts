@@ -10,9 +10,6 @@ import { AdminModule } from './Module/admin/admin.module';
 import { RetailerModule } from './Module/retailer/retailer.module';
 
 
-
-
-
 @NgModule({
   declarations: [
     AppComponent, ],

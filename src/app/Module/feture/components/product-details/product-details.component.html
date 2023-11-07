@@ -1,5 +1,5 @@
 <div class="p-5 lg:p-10 mt-10">
-    <p class="text-gray-500">product/clothes/women/saree</p>
+    <p class="text-gray-500">Product/Clothes/Women/Saree</p>
 
     <section class="lg:grid grid-cols-3 lg:gap-10">
         <div class="col-span-2 flex items-center flex-col">
@@ -7,9 +7,9 @@
                 alt="">
         </div>
         
-        <div class="col-span-1 space-y-10 mt-10 lg:mt-0">
+        <div class="col-span-1 space-y-10 py-5 lg:mt-0 px-5 bg-slate-100">
             <div class="space-y-2">
-                <p class="font-semibold text-gray-600 text-lg">comfits</p>
+                <p class="font-semibold text-gray-600 text-lg">Comfits</p>
                 <p class="text-xl">Men slim Mid Rise White Jeans</p>
 
             </div>
@@ -19,14 +19,29 @@
                 <p class="text-green-400 font-semibold text-lg">73% off</p>
 
             </div>
-            <div>
+            <div class="text-grey">
                 <p class="text-lg font-semibold">size</p>
-                <mat-radio-group class="space-x-5" aria-label="Select an option" [(ngModel)]="selectedSize">
-                    <mat-radio-button value="s"><span>S</span></mat-radio-button>
-                    <mat-radio-button value="M"><span>M</span></mat-radio-button>
-                    <mat-radio-button value="L"><span>L</span></mat-radio-button>
-                    <mat-radio-button value="XL"><span>XL</span></mat-radio-button>
-                </mat-radio-group>
+                
+<div class="flex flex-wrap">
+    <div class="flex items-center mr-4">
+        <input id="red-radio" type="radio" value="" name="colored-radio" class="w-4 h-4 bg-gray-100 border-gray-300 ">
+        <label for="red-radio" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">S</label>
+    </div>
+    <div class="flex items-center mr-4">
+        <input id="red-radio" type="radio" value="" name="colored-radio" class="w-4 h-4 bg-gray-100 border-gray-300 ">
+        <label for="red-radio" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">M</label>
+    </div>
+    <div class="flex items-center mr-4">
+        <input id="red-radio" type="radio" value="" name="colored-radio" class="w-4 h-4 bg-gray-100 border-gray-300 ">
+        <label for="red-radio" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">L</label>
+    </div>
+    <div class="flex items-center mr-4">
+        <input id="red-radio" type="radio" value="" name="colored-radio" class="w-4 h-4 bg-gray-100 border-gray-300 ">
+        <label for="red-radio" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">XL</label>
+    </div>
+    
+</div>
+
             </div>
             <div>
                 <button color="accent" style="padding: 1.5rem;" class="w-full" mat-raised-button
@@ -44,7 +59,7 @@
                     consectetur adipisicing elit. Nobis reiciendis facilis nesciunt assumenda consequatur reprehenderit
                     vero fugit placeat sunt? Porro, ex excepturi amet possimus quia quod cum natus soluta repellendus.
                 </p>
-            </div>
+            </div> 
         </div>
 
     </section>

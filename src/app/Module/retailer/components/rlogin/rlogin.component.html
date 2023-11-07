@@ -1,0 +1,54 @@
+  <!-- RegisterPage -->
+
+  <div *ngIf="!showLogin" class="flex items-center justify-center py-24 ">
+    <div class="bg-slate-100 rounded-lg shadow-lg p-8 w-96">
+        <h1 class="text-2xl font-semibold mb-6">Login</h1>
+        <form action="#" method="post">
+
+            <div class="mb-4">
+                <input type="email" id="email" name="email" class="w-full rounded-md border-2 border-gray-300 px-3 py-2 focus:outline-none focus:border-blue-500" placeholder="email/username">
+            </div>
+            <div class="mt-6">
+                <button type="submit" class="bg-blue-500 text-white rounded-md py-2 px-4 hover:bg-blue-600 focus:outline-none">Login</button>
+            </div>
+            <div class="mt-6 text-lg underline-on-focus">
+              <a (click)="OpenToRegister()">Register to new Account</a>
+            </div>
+        </form>
+    </div>
+  </div>
+
+
+<div *ngIf="showLogin" class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8 ">
+    <div class="sm:mx-auto sm:w-full sm:max-w-sm">
+      <h2 class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">Create Account</h2>
+    </div>
+  
+    <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+      <form class="space-y-6" action="#" method="POST">
+        <div>
+          <label class="block text-sm font-medium leading-6 text-gray-900">Email address</label>
+          <div class="mt-2">
+            <input id="email" name="email" type="email" class="block w-full rounded-md border-2 py-1.5 text-gray-900 ">
+          </div>
+        </div>
+  
+          <div class="flex items-center justify-between">
+            <label for="password" class="block text-sm font-medium leading-6 text-gray-900">Password</label>
+          <div class="mt-2">
+            <input id="password" name="password" type="password" class="block w-full rounded-md border-2 py-1.5 text-gray-900 ">
+          </div>
+        </div>
+  
+        <div>
+          <button type="submit" class="flex w-full justify-center rounded-md bg-blue-500 px-3 py-1.5 text-sm font-semibold leading-6 text-white ">Register</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="text-center mt-8 text-lg underline-on-focus">
+      <a (click)="OpenToSignup()">Don't have Account? click to Signup</a>
+    </div>
+    <!-- <a (click)="OpenToSignup()">don't have Account? click to Signup</a> -->
+  </div>
+

@@ -12,6 +12,10 @@ import { OrderDetailsComponent } from './Module/feture/components/order-details/
 import { AdminRoutingModule } from './Module/admin/admin-routing.module';
 import { RetailerRoutingModule } from './Module/retailer/retailer-routing.module';
 import { LoginComponent } from './Module/shared/components/login/login.component';
+import { ForgotPasswordComponent } from './Module/shared/components/forgot-password/forgot-password.component';
+import { RetailerProductComponent } from './Module/retailer/components/retailer-product/retailer-product.component';
+import { RloginComponent } from './Module/retailer/components/rlogin/rlogin.component';
+import { HistoryPageComponent } from './Module/shared/components/history-page/history-page.component';
 
 const routes: Routes = [
   {path:"admin",loadChildren:()=>import("./Module/admin/admin-routing.module").then(m=>AdminRoutingModule)},
@@ -26,8 +30,10 @@ const routes: Routes = [
   {path:"account/orders",component:OrderComponent},
   {path:"order/:id",component:OrderDetailsComponent},
   {path:"login",component:LoginComponent},
-  {path:"forgetPassword", component:LoginComponent},
-  
+  {path:"forgetPassword", component:ForgotPasswordComponent},
+  {path:"retailerForm", component:RetailerProductComponent},
+  {path:"retailerLogin", component: RloginComponent},
+  {path:"historypage", component: HistoryPageComponent}
  
 ];
 
