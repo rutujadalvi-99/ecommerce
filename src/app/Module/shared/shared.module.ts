@@ -13,7 +13,10 @@ import { AddressCardComponent } from './components/address-card/address-card.com
 import { OrderTrackComponent } from './order-track/order-track.component';
 import { MatDividerModule } from '@angular/material/divider';
 import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
+<<<<<<< HEAD
 import { HistoryPageComponent } from './components/history-page/history-page.component';
+=======
+>>>>>>> a68de15cb21f55e89152131a62b318fe79945b29
 
 
 
@@ -27,8 +30,12 @@ import { HistoryPageComponent } from './components/history-page/history-page.com
     CartItemComponent,
     AddressCardComponent,
     OrderTrackComponent,
+<<<<<<< HEAD
     ForgotPasswordComponent,
     HistoryPageComponent
+=======
+    ForgotPasswordComponent
+>>>>>>> a68de15cb21f55e89152131a62b318fe79945b29
 
   ],
   imports: [
