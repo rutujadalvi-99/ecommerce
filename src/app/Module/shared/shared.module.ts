@@ -12,6 +12,7 @@ import { CartItemComponent } from './components/cart-item/cart-item.component';
 import { AddressCardComponent } from './components/address-card/address-card.component';
 import { OrderTrackComponent } from './order-track/order-track.component';
 import { MatDividerModule } from '@angular/material/divider';
+import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
 
 
 
@@ -24,7 +25,8 @@ import { MatDividerModule } from '@angular/material/divider';
     StarRatingComponent,
     CartItemComponent,
     AddressCardComponent,
-    OrderTrackComponent
+    OrderTrackComponent,
+    ForgotPasswordComponent
 
   ],
   imports: [
@@ -42,9 +44,7 @@ import { MatDividerModule } from '@angular/material/divider';
     CartItemComponent,
     AddressCardComponent,
     OrderTrackComponent
-   
-  
-    
+ 
   ]
 })
 export class SharedModule { }

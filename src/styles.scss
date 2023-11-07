@@ -6,6 +6,7 @@
 body{
     margin: 0;
     font-family: Roboto,"Helvetica Neue",sans-serif;
+    // background-color: black;
     color: #000000;
     
    
@@ -30,6 +31,10 @@ body{
 .productcard:hover{
     box-shadow: #000000 0px 5px 15px
 }
+
+.underline-on-focus {
+    @apply focus:underline;
+  }
 
 
 

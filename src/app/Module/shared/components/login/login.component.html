@@ -1,7 +1,7 @@
   <!-- RegisterPage -->
 
   <div *ngIf="!showLogin" class="h-screen flex items-center justify-center">
-    <div class="bg-white rounded-lg shadow-lg p-8 w-96">
+    <div class="bg-slate-100 rounded-lg shadow-lg p-8 w-96">
         <h1 class="text-2xl font-semibold mb-6">Create Your Account</h1>
         <form action="#" method="post">
             <div class="mb-4">
@@ -27,15 +27,15 @@
             <div class="mt-6">
                 <button type="submit" class="bg-blue-500 text-white rounded-md py-2 px-4 hover:bg-blue-600 focus:outline-none">Create Account</button>
             </div>
-            <div class="mt-6 text-lg">
-              <a (click)="OpenToLogin()">Already have Account? click to Login</a>
+            <div class="mt-6 text-lg underline-on-focus">
+              <a (click)="OpenToLogin()">Already have Account? Click to Login</a>
             </div>
         </form>
     </div>
   </div>
 
 
-<div *ngIf="showLogin" class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
+<div *ngIf="showLogin" class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8 ">
     <div class="sm:mx-auto sm:w-full sm:max-w-sm">
       <h2 class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">SIGN IN TO YOUR ACCOUNT</h2>
     </div>
@@ -50,24 +50,14 @@
         </div>
   
         <div>
-          <div class="flex items-center justify-between">
-            <label for="password" class="block text-sm font-medium leading-6 text-gray-900">Password</label>
-            <div class="text-sm">
-              <a href="ForgetPassword.html" class="font-semibold text-indigo-600 hover:text-indigo-500">Forgot password?</a>
-            </div>
-          </div>
-          <div class="mt-2">
-            <input id="password" name="password" type="password" class="block w-full rounded-md border-2 py-1.5 text-gray-900 ">
-          </div>
-        </div>
-  
-        <div>
-          <button type="submit" class="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500">Sign in</button>
+          <button type="submit" class="flex w-full justify-center rounded-md bg-blue-500 px-3 py-1.5 text-sm font-semibold leading-6 text-white ">Sign in</button>
         </div>
       </form>
-  
-      
     </div>
-    <a (click)="OpenToSignup()">don't have Account? click to Signup</a>
+
+    <div class="text-center mt-8 text-lg underline-on-focus">
+      <a (click)="OpenToSignup()">Don't have Account? click to Signup</a>
+    </div>
+    <!-- <a (click)="OpenToSignup()">don't have Account? click to Signup</a> -->
   </div>
 
