@@ -24,7 +24,7 @@ export class NavbarComponent {
   }
 
   openSeller(){
-    this.router.navigate(['/retailer']);
+    this.router.navigate(['/retailerLogin']);
     
   }
 

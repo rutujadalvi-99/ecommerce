@@ -4,8 +4,8 @@ import { CommonModule } from '@angular/common';
 import { RetailerRoutingModule } from './retailer-routing.module';
 import { RetailerProductComponent } from './components/retailer-product/retailer-product.component';
 import { RdetailsComponent } from './components/rdetails/rdetails.component';
-import { RordersComponent } from './components/rorders/rorders.component';
 import { RetailerdeleteComponent } from './components/retailerdelete/retailerdelete.component';
+import { RloginComponent } from './components/rlogin/rlogin.component';
 
 
 
@@ -14,8 +14,8 @@ import { RetailerdeleteComponent } from './components/retailerdelete/retailerdel
   declarations: [
     RetailerProductComponent,
     RdetailsComponent,
-    RordersComponent,
-    RetailerdeleteComponent
+    RetailerdeleteComponent,
+    RloginComponent
   ],
   imports: [
     CommonModule,

@@ -8,9 +8,7 @@ import { FetureModule } from './Module/feture/feture.module';
 import { SharedModule } from './Module/shared/shared.module';
 import { AdminModule } from './Module/admin/admin.module';
 import { RetailerModule } from './Module/retailer/retailer.module';
-
-
-
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -23,7 +21,8 @@ import { RetailerModule } from './Module/retailer/retailer.module';
     FetureModule,
     SharedModule,
     AdminModule,
-    RetailerModule
+    RetailerModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
