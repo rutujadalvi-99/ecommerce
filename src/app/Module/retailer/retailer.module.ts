@@ -6,6 +6,7 @@ import { RetailerProductComponent } from './components/retailer-product/retailer
 import { RdetailsComponent } from './components/rdetails/rdetails.component';
 import { RetailerdeleteComponent } from './components/retailerdelete/retailerdelete.component';
 import { RloginComponent } from './components/rlogin/rlogin.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -19,7 +20,8 @@ import { RloginComponent } from './components/rlogin/rlogin.component';
   ],
   imports: [
     CommonModule,
-    RetailerRoutingModule
+    RetailerRoutingModule,
+    FormsModule
   ]
 })
 export class RetailerModule { }

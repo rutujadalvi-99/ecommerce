@@ -27,6 +27,9 @@
             <div class="mt-6">
                 <button type="submit" class="bg-blue-500 text-white rounded-md py-2 px-4 hover:bg-blue-600 focus:outline-none">Create Account</button>
             </div>
+            <div>
+              <!-- <h3>{{messageIfAny}}</h3> -->
+            </div>
             <div class="mt-6 text-lg underline-on-focus">
               <a (click)="OpenToLogin()">Already have Account? Click to Login</a>
             </div>
@@ -41,17 +44,21 @@
     </div>
   
     <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-      <form class="space-y-6" action="#" method="POST">
+      <form (ngSubmit)="loginCheck()" class="space-y-6" action="#" method="POST">
         <div>
           <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email address</label>
           <div class="mt-2">
-            <input id="email" name="email" type="email" class="block w-full rounded-md border-2 py-1.5 text-gray-900 ">
+            <input [(ngModel)]=login.email 
+            id="email" name="email" type="email" class="block w-full rounded-md border-2 py-1.5 text-gray-900 ">
           </div>
         </div>
   
         <div>
           <button type="submit" class="flex w-full justify-center rounded-md bg-blue-500 px-3 py-1.5 text-sm font-semibold leading-6 text-white ">Sign in</button>
         </div>
+
+        <h2>{{ messageIfAny }}</h2>
+
       </form>
     </div>
 
