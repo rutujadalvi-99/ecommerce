@@ -6,6 +6,7 @@ import { AdminProductsComponent } from './components/admin-products/admin-produc
 import { OrdersTableComponent } from './components/orders-table/orders-table.component';
 import { CustomersComponent } from './components/customers/customers.component';
 
+
 const routes: Routes = [
     {path:"",component:AdminComponent,children:[
     {path:"",component:DashboardComponent},
