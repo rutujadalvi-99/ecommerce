@@ -2,95 +2,132 @@
     <div class="text-2xl py-4 px-6 bg-slate-500 text-white text-center font-bold uppercase">
         Product List
     </div>
-    <form class="py-4 px-6" action="" method="POST">
-        
+    <form (ngSubmit)="add()" class="py-4 px-6">
+
+
         <div class="mb-4">
             <label class="block text-gray-700 font-bold mb-2" for="email">
                 Product Title
             </label>
-            <input
+            <input [(ngModel)]="product.title"
                 class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                id="name" type="text" >
+                id="name" type="text" name="rtitle">
+        </div>
+
+        <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="toplevel">Top Level Category</label>
+            <select [(ngModel)]="product.topLevelCategory" class="form-select mt-1 block w-full"
+                name="rtopLevelCategory">
+                <option value="men">Men</option>
+                <option value="women">Women</option>
+                <option value="kids">Kids</option>
+            </select>
+        </div>
+
+        <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="secondLevelCategory">Second Level
+                Category</label>
+            <select [(ngModel)]="product.secondLevelCategory" class="form-select mt-1 block w-full"
+                name="rsecondLevelCategory" id="secondLevelCategory">
+                <option value="clothing">Clothing</option>
+                <option value="accessories">Accessories</option>
+                <option value="brands">Brands</option>
+            </select>
+        </div>
+
+        <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="thirdLevelCategory">Third Level
+                Category</label>
+            <select [(ngModel)]="product.thirdLevelCategory" class="form-select mt-1 block w-full"
+                name="rthirdLevelCategory" id="thirdLevelCategory">
+                <option value="top">Tops</option>
+                <option value="women_dress">Dresses</option>
+                <option value="t-shirts">T-Shirts</option>
+                <option value="women_saree">Saree</option>
+                <option value="lengha_choli">Lengha Choli</option>
+                <option value="men_jeans">Men Jeans</option>
+                <option value="mens_kurta">Men Kurta</option>
+            </select>
         </div>
 
         <div class="mb-4">
             <label class="block text-gray-700 font-bold mb-2" for="email">
                 Product Description
             </label>
-            <input
+            <input [(ngModel)]="product.description"
                 class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                id="name" type="text" >
+                id="pname" type="text" name="pdescription">
         </div>
 
         <div class="mb-4">
             <label class="block text-gray-700 font-bold mb-2" for="name">
                 Product Brand
             </label>
-            <input
+            <input [(ngModel)]="product.brand"
                 class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                id="name" type="text">
+                id="name" type="text" name="pbrand">
         </div>
 
         <div class="mb-4">
             <label class="block text-gray-700 font-bold mb-2" for="date">
                 Product Size
             </label>
-            <input
+            <input [(ngModel)]="product.size"
                 class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                id="size" type="text">
+                id="size" type="text"  name="psize">
         </div>
 
         <div class="mb-4">
             <label class="block text-gray-700 font-bold mb-2" for="name">
                 Product Color
             </label>
-            <input
+            <input [(ngModel)]="product.color"
                 class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                id="color" type="text">
+                id="color" type="text" name="pcolor">
         </div>
 
         <div class="mb-4">
             <label class="block text-gray-700 font-bold mb-2" for="date">
                 Product Quantity
             </label>
-            <input
+            <input [(ngModel)]="product.quantity"
                 class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                id="quantity" type="number">
+                id="quantity" type="number" name="pquantity">
         </div>
 
         <div class="mb-4">
             <label class="block text-gray-700 font-bold mb-2" for="email">
                 Product Price
             </label>
-            <input
+            <input [(ngModel)]="product.price"
                 class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                id="price" type="number" >
+                id="price" type="number" name="p.price">
         </div>
 
         <div class="mb-4">
             <label class="block text-gray-700 font-bold mb-2" for="email">
                 Product Discount
             </label>
-            <input
+            <input [(ngModel)]="product.discountPrice"
                 class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                id="discount" type="number" >
+                id="discount" type="number" name="pdiscription">
         </div>
 
         <div class="mb-4">
             <label class="block text-gray-700 font-bold mb-2" for="email">
                 Product Discount Percentage
             </label>
-            <input
+            <input [(ngModel)]="product.discountPercentage"
                 class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                id="percentage" type="number" >
+                id="percentage" type="number" name="p.discountPrice">
         </div>
         <div class="mb-4">
             <label class="block text-gray-700 font-bold mb-2" for="email">
                 Product Image
             </label>
-            <input
+            <input [(ngModel)]="product.img"
                 class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                id="img" type="text" >
+                id="img" type="text" name="pimg">
         </div>
         <div class="flex items-center justify-center mb-4">
             <button
