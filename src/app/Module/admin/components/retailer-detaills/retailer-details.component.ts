@@ -1,11 +1,16 @@
+<<<<<<< HEAD
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+=======
+import { Component } from '@angular/core';
+>>>>>>> 3f88b41987dd03c8690a8db33f0453dd9136dce3
 
 @Component({
   selector: 'app-retailer-details',
   templateUrl: './retailer-details.component.html',
   styleUrls: ['./retailer-details.component.scss']
 })
+<<<<<<< HEAD
 export class RetailerDetailsComponent implements OnInit {
   retailers: any[] = [];
   products: any[] = [];
@@ -40,4 +45,8 @@ export class RetailerDetailsComponent implements OnInit {
       console.log(`Retailer with ID ${retailerId} deleted successfully.`);
     });
   }
+=======
+export class RetailerDetailsComponent {
+
+>>>>>>> 3f88b41987dd03c8690a8db33f0453dd9136dce3
 }
