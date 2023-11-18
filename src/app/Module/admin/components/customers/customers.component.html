@@ -1,1 +1,21 @@
-<p>customers works!</p>
+<div class="user-table">
+  <table class="min-w-full bg-white border border-gray-300 shadow-md rounded-md overflow-hidden mt-10">
+    <thead class="bg-gray-200">
+      <tr>
+        <th class="py-3 px-6 text-lg font-bold">Name</th>
+        <th class="py-3 px-6 text-lg font-bold">Email</th>
+        <th class="py-3 px-6 text-lg font-bold">Phone</th>
+        <th class="py-3 px-6 text-lg font-bold">Address</th>
+        <!-- Add more table headers as needed -->
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users" class="border-t">
+        <td class="py-2 px-6 text-lg">{{ user.firstName + ' ' + user.lastName }}</td>
+        <td class="py-2 px-6 text-lg">{{ user.email }}</td>
+        <td class="py-2 px-6 text-lg">{{ user.phone }}</td>
+        <td class="py-2 px-6 text-lg">{{ user.address }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

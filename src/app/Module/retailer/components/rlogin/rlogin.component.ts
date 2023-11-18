@@ -36,7 +36,7 @@ export class RloginComponent {
       console.log(data);
       if(data.status == true) {
         localStorage.setItem('retailerId', data.retailerId);
-        this.router.navigate(['/'])
+        this.router.navigate(['/retailer'])
       }
       else
         this.messageIfAny = data.messageIfAny;

@@ -1057,7 +1057,7 @@ export const dressPage1 = [
     "brand": "Leriya Fashion",
     "title": "Women A-line Blue Dress",
     "color": "",
-    "discountedPrice": 351,
+    "discountedPrice": 4000,
     "price": 4999,
     "discountPersent": 64,
     "size": [

@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./orders-table.component.scss']
 })
 export class OrdersTableComponent {
-
+// orders:
 }
