@@ -31,7 +31,7 @@ export class RloginComponent {
 
 
   registerCheck() {
-    let url = `http://localhost:8080/api/retailer/register`;
+    let url = `http://localhost:9090/api/retailer/register`;
     this.http.post<any>(url, this.register).subscribe(data => {
       console.log(data);
       if(data.status == true) {
@@ -45,7 +45,7 @@ export class RloginComponent {
 
 
   loginCheck() {
-    let url = `http://localhost:8080/api/retailer/login`;
+    let url = `http://localhost:9090/api/retailer/login`;
     this.http.post<any>(url, this.login).subscribe(data => {
       console.log(data);
       if(data.status == true) {
