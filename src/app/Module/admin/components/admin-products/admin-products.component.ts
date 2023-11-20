@@ -1,15 +1,14 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 
-
 @Component({
   selector: 'app-admin-products',
   templateUrl: './admin-products.component.html',
   styleUrls: ['./admin-products.component.scss']
 })
 export class AdminProductsComponent {
-  products: any[] = [];
-  imageUrl!: string;
+  products: any[] | undefined;
+
 
   constructor(private http: HttpClient) { }
 
@@ -34,3 +33,4 @@ export class AdminProductsComponent {
 
   }
 }
+

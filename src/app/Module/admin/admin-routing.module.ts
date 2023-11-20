@@ -7,7 +7,6 @@ import { OrdersTableComponent } from './components/orders-table/orders-table.com
 import { CustomersComponent } from './components/customers/customers.component';
 import { RetailerDetailsComponent } from './components/retailer-detaills/retailer-details.component';
 
-
 const routes: Routes = [
     {path:"",component:AdminComponent,children:[
     {path:"",component:DashboardComponent},
